@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class TaksimetreHesaplayici {
+    public static void main(String[] args) {
+
+        double km,kmtutar = 2.2, acilis = 10 ,minimum = 20,tutar;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.printf("Gitmek istediğiniz mesafe kaç km : ");
+        km = girdi.nextInt();
+
+        tutar = acilis + (km * kmtutar);
+
+        Double sonuc = (tutar < 20) ? minimum : tutar;
+
+        System.out.printf("Toplam tutar :" + sonuc);
+
+
+    }
+}
